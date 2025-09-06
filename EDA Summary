@@ -1,0 +1,35 @@
+
+---
+
+## 📄 EDA_summary.md (hazır)
+```markdown
+# EDA ve Ön İşleme Özeti
+
+**Ad Soyad:** Mert Üstün  
+**E-posta:** your_email@example.com  
+
+## 1. Veri Açıklaması
+- Kaynak: Talent_Academy_Case_DT_2025
+- Satır / sütun sayısı:(2235, 335)
+- Amaç: Eksik değerleri incelemek, kategorik değişkenleri encode etmek, modellemeye hazır hale getirmek
+
+## 2. Keşifsel Analiz
+- Eksik değerler:
+  - `Bolum`: 221 eksik → en sık değer veya tanıya göre dolduruldu
+  -`Cinsiyet`: Üstündeki değer devam ettiği için üstündeki değer ile dolduruldu
+- `Tanilar`: Çoklu değer içeriyor (örn. "Diabetes, Hypertension")
+- Sınıf dağılımları: Notebook içindeki frekans grafikleri ile incelendi
+- Korelasyon analizi: Sayısal değişkenler arasındaki ilişkiler görselleştirildi
+
+## 3. Ön İşleme Adımları
+1. Eksik değer doldurma
+   - Kategorik: en sık değer veya tanıya bağlı atama
+2. Kategorik encoding
+   - Tekli kategoriler: One-Hot Encoding
+   - Çoklu tanılar: MultiLabelBinarizer
+3. Ölçekleme (gerektiğinde MinMaxScaler)
+4. Aykırı değer analizi (notebook’ta özetlenmiştir)
+
+## 4. Sonuç
+- Veri modeli beslemeye hazır hale getirildi
+- Notebook içinde görselleştirme ve preprocessing adımları gösterildi
